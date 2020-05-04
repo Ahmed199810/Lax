@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ama.lax.ui.activities.HomeActivity"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:id="@+id/top_bar"
+
+
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:hint="Search"
+
+                />
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_above="@id/bottom_nav"
+            android:layout_below="@+id/top_bar"
+            >
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#cecece"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:id="@+id/bottom_nav"
+
+            >
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/app_icon1"
+                android:layout_margin="15dp"
+                android:id="@+id/btn_exercises"
+
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/app_icon22"
+                android:layout_margin="15dp"
+                android:id="@+id/btn_navigation"
+
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/app_icon2"
+                android:layout_margin="15dp"
+                android:id="@+id/btn_people"
+
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/app_icon23"
+                android:layout_margin="15dp"
+                android:id="@+id/btn_notification"
+
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/app_icon3"
+                android:layout_margin="15dp"
+                android:id="@+id/btn_gifts"
+
+                />
+
+
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/bottom_nav"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_message_black_24dp"
+            android:id="@+id/btn_message"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</layout>

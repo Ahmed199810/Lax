@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ama.lax.ui.activities.HomeActivity"
+        android:id="@+id/drawer_layout"
+        android:fitsSystemWindows="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:id="@+id/top_bar"
+
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_text"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:hint="Search"
+
+
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.ama.lax.ui.activities.HomeActivity"
+
+                >
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_above="@id/bottom_nav"
+
+                    >
+
+
+                </androidx.viewpager.widget.ViewPager>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#cecece"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:id="@+id/bottom_nav"
+
+                    >
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/app_icon1"
+                        android:layout_margin="15dp"
+                        android:id="@+id/btn_exercises"
+
+                        />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/app_icon22"
+                        android:layout_margin="15dp"
+                        android:id="@+id/btn_navigation"
+
+                        />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/app_icon2"
+                        android:layout_margin="15dp"
+                        android:id="@+id/btn_people"
+
+                        />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/app_icon23"
+                        android:layout_margin="15dp"
+                        android:id="@+id/btn_notification"
+
+                        />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/app_icon3"
+                        android:layout_margin="15dp"
+                        android:id="@+id/btn_gifts"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="350dp"
+                    android:gravity="top"
+                    android:orientation="vertical"
+                    android:layout_above="@+id/btn_message"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/chat_container"
+                    android:background="@drawable/input_text"
+                    android:visibility="gone"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#ffc73a"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/top_logo_msg"
+
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/app_icon41"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HELLO !"
+                                android:textColor="#fff"
+                                android:textSize="30dp"
+                                android:layout_marginLeft="15dp"
+
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/scroll"
+                            android:layout_below="@+id/top_logo_msg"
+                            android:layout_above="@+id/bottom_msg"
+                            android:padding="5dp"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/msg_sent_layout"
+
+                                >
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/bottom_msg"
+
+                            >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/input_text"
+                                android:padding="10dp"
+                                android:hint="write message..."
+                                android:layout_weight="1"
+                                android:id="@+id/txt_message"
+
+                                />
+
+                            <ImageButton
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_send_black_24dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/btn_send"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/bottom_nav"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/ic_message_black_24dp"
+                    android:id="@+id/btn_message"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_home"
+            app:menu="@menu/activity_home_drawer"
+            android:background="@color/colorPrimary"
+            app:itemTextColor="#fff"
+
+            >
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

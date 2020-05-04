@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ama.lax.ui.activities.HomeActivity"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+                android:gravity="center"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_mediation"
+                            android:layout_weight="1"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon5"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="Meditation"
+                                    android:layout_margin="10dp"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_song"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon6"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="Sing a Song"
+                                    android:layout_margin="10dp"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+
+                    >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_play"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon7"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="Play"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_talk"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon9"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="Talk to Friend"
+                                    android:layout_margin="10dp"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+
+                    >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_stretch_teapot"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon10"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="Teapot Stretch"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_stretch_back"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon12"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="back Stretch"
+                                    android:layout_margin="10dp"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_gym"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon27"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="Gym"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:id="@+id/btn_inner_peace"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/app_icon31"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="Inner Peace"
+                                    android:layout_margin="10dp"
+
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</layout>

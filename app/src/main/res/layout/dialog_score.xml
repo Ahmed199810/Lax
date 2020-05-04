@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:background="@drawable/app_icon38"
+        android:id="@+id/img_bg"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/img_bg"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulations"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/cairoblack"
+            android:textColor="#FAC62C"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR SCORE"
+            android:textSize="30dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:fontFamily="@font/cairoblack"
+            android:textSize="50dp"
+            android:textColor="#000"
+            android:id="@+id/txt_score"
+
+
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
